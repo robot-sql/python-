@@ -25,10 +25,10 @@ def ui_auto_operation():
     # 输入用户名
     username = browser.find_element_by_xpath('//*[@id="txtUserName"]')
     username.clear()
-    username.send_keys('11111')
+    username.send_keys('11*****')
     print('username input success')
     # 输入密码
-    browser.find_element_by_xpath('//*[@id="txtPassword"]').send_keys('11111')
+    browser.find_element_by_xpath('//*[@id="txtPassword"]').send_keys('11****')
     print('password input success')
     # # 加载验证码
     # yzm = browser.find_element_by_xpath('/html/body/div[2]/div/div[2]/form/dl[3]/dd/input')
@@ -73,8 +73,8 @@ def ui_auto_operation():
         # 处理弹出alert框
         alert = browser.switch_to.alert
         alert.accept()
-        if os.path.exists(r'C:\fakepath\5096.xls') is True:
-            os.remove(r'C:\fakepath\5096.xls')
+        if os.path.exists(r'C:\\fakepath\\5096.xls') is True:
+            os.remove(r'C:\\fakepath\\5096.xls')
     finally:
         browser.close()
         # browser.quit()
