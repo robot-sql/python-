@@ -19,10 +19,10 @@ cookies = browser.get_cookies()
 print(cookies)
 username = browser.find_element_by_xpath('/html/body/div[2]/div/div[2]/form/dl[1]/dd/input')
 username.clear()
-username.send_keys('18700009577')
+username.send_keys('1870000****')
 print('username input success')
 # 输入密码
-browser.find_element_by_xpath('/html/body/div[2]/div/div[2]/form/dl[2]/dd/input').send_keys('1122222')
+browser.find_element_by_xpath('/html/body/div[2]/div/div[2]/form/dl[2]/dd/input').send_keys('11*****')
 print('password input success')
 # 加载验证码
 yzm = browser.find_element_by_xpath('/html/body/div[2]/div/div[2]/form/dl[3]/dd/input')
