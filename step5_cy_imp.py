@@ -69,9 +69,9 @@ def ui_auto_operation():
     load.click()
     try:
         # 每隔2s就去扫描弹出框是否存在,总时长是300s,存在就继续执行之后代码
-        WebDriverWait(browser, 300, 2).until(EC.alert_is_present())
+        alert = WebDriverWait(browser, 300, 2).until(EC.alert_is_present())
         # 处理弹出alert框
-        alert = browser.switch_to.alert
+        # alert = browser.switch_to.alert
         alert.accept()
         if os.path.exists(r'C:\\fakepath\\5096.xls') is True:
             os.remove(r'C:\\fakepath\\5096.xls')
